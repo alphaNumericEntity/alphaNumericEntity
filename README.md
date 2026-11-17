@@ -1,5 +1,7 @@
 ### I build privacy-first tools, and fix bugs in the open-source libraries underneath them.
 
+📍 Sydney, Australia
+
 **[PDFAirlock](https://pdfairlock.com)**: PDF tools that run entirely in your browser. Merge, split, compress, redact, sign, protect and convert, with no upload step anywhere.
 
 - **You don't have to trust it.** The site ships a `connect-src 'self'` Content-Security-Policy, so the browser itself refuses to send your file to any other host. It also works with the network off.
