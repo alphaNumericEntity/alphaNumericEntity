@@ -23,7 +23,6 @@
 | [necolas/react-native-web](https://github.com/necolas/react-native-web) ★22k | [\[fix\] Responder: keep negative touch identifiers in the touch bank](https://github.com/necolas/react-native-web/pull/2965) | Open |
 | [cantoo-scribe/pdf-lib](https://github.com/cantoo-scribe/pdf-lib) ★361 | [Measure standard font text without kerning, as drawText draws it](https://github.com/cantoo-scribe/pdf-lib/pull/182) | Open |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) ★31k | [fix(two-factor): use the issuer option in get-totp-uri](https://github.com/better-auth/better-auth/pull/12637) | Open |
-| [stablyai/orca](https://github.com/stablyai/orca) ★128k | [feat(themes): let app themes set agent and workspace status colors](https://github.com/stablyai/orca/pull/41561) | Open |
 <!-- contributions:end -->
 
 <sub>Updated daily from GitHub by a workflow in this repo.</sub>
