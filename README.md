@@ -21,7 +21,7 @@
 | [mozilla/pdf.js](https://github.com/mozilla/pdf.js) ★54k | [Render the value of text fields without an appearance stream (issue 20266)](https://github.com/mozilla/pdf.js/pull/22541) | Open |
 | [pixijs/pixijs](https://github.com/pixijs/pixijs) ★49k | [fix: stop HTMLText textures coming out smaller than their image](https://github.com/pixijs/pixijs/pull/12412) | Open |
 | [necolas/react-native-web](https://github.com/necolas/react-native-web) ★22k | [\[fix\] Responder: keep negative touch identifiers in the touch bank](https://github.com/necolas/react-native-web/pull/2965) | Open |
-| [cantoo-scribe/pdf-lib](https://github.com/cantoo-scribe/pdf-lib) ★361 | [Measure standard font text without kerning, as drawText draws it](https://github.com/cantoo-scribe/pdf-lib/pull/182) | Open |
+| [cantoo-scribe/pdf-lib](https://github.com/cantoo-scribe/pdf-lib) ★362 | [Measure standard font text without kerning, as drawText draws it](https://github.com/cantoo-scribe/pdf-lib/pull/182) | Open |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) ★31k | [fix(two-factor): use the issuer option in get-totp-uri](https://github.com/better-auth/better-auth/pull/12637) | Open |
 <!-- contributions:end -->
 
