@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="226" viewBox="0 0 860 226" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect x="0.5" y="0.5" width="859" height="225" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+
+<text x="32" y="36" font-size="13" font-weight="600" letter-spacing="1.2" fill="#59636e">MY PROJECTS</text>
+<rect x="32" y="52" width="254.66666666666666" height="150" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="48" y="80" font-size="15" font-weight="600" fill="#0969da">PDFAirlock</text>
+<text x="48" y="98" font-size="11.5" fill="#59636e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Web app · AGPL-3.0</text>
+<text x="48" y="118" font-size="12.5" fill="#59636e">PDF tools that run entirely in</text>
+<text x="48" y="137" font-size="12.5" fill="#59636e">your browser. Its connect-src</text>
+<text x="48" y="156" font-size="12.5" fill="#59636e">'self' policy stops the file from</text>
+<text x="48" y="175" font-size="12.5" fill="#59636e">leaving the page. Works offline.</text>
+<rect x="302.66666666666663" y="52" width="254.66666666666666" height="150" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="318.66666666666663" y="80" font-size="15" font-weight="600" fill="#0969da">pdf-redaction-check</text>
+<text x="318.66666666666663" y="98" font-size="11.5" fill="#59636e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Node CLI + library · MIT</text>
+<text x="318.66666666666663" y="118" font-size="12.5" fill="#59636e">Finds text left under black</text>
+<text x="318.66666666666663" y="137" font-size="12.5" fill="#59636e">boxes, unapplied Redact marks</text>
+<text x="318.66666666666663" y="156" font-size="12.5" fill="#59636e">and removed text still kept in</text>
+<text x="318.66666666666663" y="175" font-size="12.5" fill="#59636e">a PDF's earlier saved versions.</text>
+<rect x="573.3333333333333" y="52" width="254.66666666666666" height="150" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="589.3333333333333" y="80" font-size="15" font-weight="600" fill="#0969da">no-phone-home</text>
+<text x="589.3333333333333" y="98" font-size="11.5" fill="#59636e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">CI check · MIT</text>
+<text x="589.3333333333333" y="118" font-size="12.5" fill="#59636e">Fails CI when a page can contact</text>
+<text x="589.3333333333333" y="137" font-size="12.5" fill="#59636e">a host you didn't allow. Checks the</text>
+<text x="589.3333333333333" y="156" font-size="12.5" fill="#59636e">served policy, a real browser run,</text>
+<text x="589.3333333333333" y="175" font-size="12.5" fill="#59636e">workers and scripted user flows.</text>
+</svg>
