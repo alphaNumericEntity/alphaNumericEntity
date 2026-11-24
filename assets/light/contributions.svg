@@ -1,55 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="530" viewBox="0 0 860 530" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
-<rect x="0.5" y="0.5" width="859" height="529" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="648" viewBox="0 0 860 648" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect x="0.5" y="0.5" width="859" height="647" rx="12" fill="#ffffff" stroke="#d0d7de"/>
 
 <text x="32" y="36" font-size="13" font-weight="600" letter-spacing="1.2" fill="#59636e">PULL REQUESTS TO OTHER PEOPLE'S PROJECTS</text>
 
-<text x="32" y="72" font-size="13" font-weight="600" fill="#1f2328">plantuml/plantuml<tspan font-weight="400" fill="#59636e">  ★ 13k</tspan></text>
-<text x="32" y="89" font-size="12.5" fill="#59636e">🐛 YAML: read a `-` or `- key:` with nothing under it as an empty value</text>
+<text x="32" y="72" font-size="13" font-weight="600" fill="#1f2328">jsxgraph/jsxgraph<tspan font-weight="400" fill="#59636e">  ★ 1.5k</tspan></text>
+<text x="32" y="89" font-size="12.5" fill="#59636e">Return a square identity matrix from JXG.Math.identity when m is not a number</text>
 <rect x="768" y="65" width="60" height="22" rx="11" fill="none" stroke="#8250df"/>
 <text x="798" y="80" font-size="12" font-weight="600" fill="#8250df" text-anchor="middle">Merged</text>
 <line x1="32" y1="98" x2="828" y2="98" stroke="#d0d7de"/>
-<text x="32" y="118" font-size="13" font-weight="600" fill="#1f2328">jsxgraph/jsxgraph<tspan font-weight="400" fill="#59636e">  ★ 1.5k</tspan></text>
-<text x="32" y="135" font-size="12.5" fill="#59636e">Fix JXG.Math.Statistics.TheilSenRegression slope medians</text>
+<text x="32" y="118" font-size="13" font-weight="600" fill="#1f2328">plantuml/plantuml<tspan font-weight="400" fill="#59636e">  ★ 13k</tspan></text>
+<text x="32" y="135" font-size="12.5" fill="#59636e">🐛 YAML: read a `-` or `- key:` with nothing under it as an empty value</text>
 <rect x="768" y="111" width="60" height="22" rx="11" fill="none" stroke="#8250df"/>
 <text x="798" y="126" font-size="12" font-weight="600" fill="#8250df" text-anchor="middle">Merged</text>
 <line x1="32" y1="144" x2="828" y2="144" stroke="#d0d7de"/>
-<text x="32" y="164" font-size="13" font-weight="600" fill="#1f2328">pixijs/pixijs<tspan font-weight="400" fill="#59636e">  ★ 49k</tspan></text>
-<text x="32" y="181" font-size="12.5" fill="#59636e">fix: stop HTMLText textures coming out smaller than their image</text>
-<rect x="754" y="157" width="74" height="22" rx="11" fill="none" stroke="#0969da"/>
-<text x="791" y="172" font-size="12" font-weight="600" fill="#0969da" text-anchor="middle">Approved</text>
+<text x="32" y="164" font-size="13" font-weight="600" fill="#1f2328">jsxgraph/jsxgraph<tspan font-weight="400" fill="#59636e">  ★ 1.5k</tspan></text>
+<text x="32" y="181" font-size="12.5" fill="#59636e">Fix JXG.Math.Statistics.TheilSenRegression slope medians</text>
+<rect x="768" y="157" width="60" height="22" rx="11" fill="none" stroke="#8250df"/>
+<text x="798" y="172" font-size="12" font-weight="600" fill="#8250df" text-anchor="middle">Merged</text>
 <line x1="32" y1="190" x2="828" y2="190" stroke="#d0d7de"/>
-<text x="32" y="210" font-size="13" font-weight="600" fill="#1f2328">mozilla/pdf.js<tspan font-weight="400" fill="#59636e">  ★ 54k</tspan></text>
-<text x="32" y="227" font-size="12.5" fill="#59636e">Render the value of text fields without an appearance stream (issue 20266)</text>
-<rect x="747" y="203" width="81" height="22" rx="11" fill="none" stroke="#9a6700"/>
-<text x="787.5" y="218" font-size="12" font-weight="600" fill="#9a6700" text-anchor="middle">In review</text>
+<text x="32" y="210" font-size="13" font-weight="600" fill="#1f2328">pixijs/pixijs<tspan font-weight="400" fill="#59636e">  ★ 49k</tspan></text>
+<text x="32" y="227" font-size="12.5" fill="#59636e">fix: stop HTMLText textures coming out smaller than their image</text>
+<rect x="754" y="203" width="74" height="22" rx="11" fill="none" stroke="#0969da"/>
+<text x="791" y="218" font-size="12" font-weight="600" fill="#0969da" text-anchor="middle">Approved</text>
 <line x1="32" y1="236" x2="828" y2="236" stroke="#d0d7de"/>
-<text x="32" y="256" font-size="13" font-weight="600" fill="#1f2328">better-auth/better-auth<tspan font-weight="400" fill="#59636e">  ★ 31k</tspan></text>
-<text x="32" y="273" font-size="12.5" fill="#59636e">fix(two-factor): use the issuer option in get-totp-uri</text>
+<text x="32" y="256" font-size="13" font-weight="600" fill="#1f2328">stablyai/orca<tspan font-weight="400" fill="#59636e">  ★ 135k</tspan></text>
+<text x="32" y="273" font-size="12.5" fill="#59636e">feat(themes): let app themes set agent and workspace status colors</text>
 <rect x="747" y="249" width="81" height="22" rx="11" fill="none" stroke="#9a6700"/>
 <text x="787.5" y="264" font-size="12" font-weight="600" fill="#9a6700" text-anchor="middle">In review</text>
 <line x1="32" y1="282" x2="828" y2="282" stroke="#d0d7de"/>
-<text x="32" y="302" font-size="13" font-weight="600" fill="#1f2328">necolas/react-native-web<tspan font-weight="400" fill="#59636e">  ★ 22k</tspan></text>
-<text x="32" y="319" font-size="12.5" fill="#59636e">[fix] Responder: keep negative touch identifiers in the touch bank</text>
-<rect x="782" y="295" width="46" height="22" rx="11" fill="none" stroke="#1a7f37"/>
-<text x="805" y="310" font-size="12" font-weight="600" fill="#1a7f37" text-anchor="middle">Open</text>
+<text x="32" y="302" font-size="13" font-weight="600" fill="#1f2328">mozilla/pdf.js<tspan font-weight="400" fill="#59636e">  ★ 54k</tspan></text>
+<text x="32" y="319" font-size="12.5" fill="#59636e">Render the value of text fields without an appearance stream (issue 20266)</text>
+<rect x="747" y="295" width="81" height="22" rx="11" fill="none" stroke="#9a6700"/>
+<text x="787.5" y="310" font-size="12" font-weight="600" fill="#9a6700" text-anchor="middle">In review</text>
 <line x1="32" y1="328" x2="828" y2="328" stroke="#d0d7de"/>
-<text x="32" y="348" font-size="13" font-weight="600" fill="#1f2328">webpro-nl/knip<tspan font-weight="400" fill="#59636e">  ★ 13k</tspan></text>
-<text x="32" y="365" font-size="12.5" fill="#59636e">Treat members of an enum iterated with `for...in` as used</text>
-<rect x="782" y="341" width="46" height="22" rx="11" fill="none" stroke="#1a7f37"/>
-<text x="805" y="356" font-size="12" font-weight="600" fill="#1a7f37" text-anchor="middle">Open</text>
+<text x="32" y="348" font-size="13" font-weight="600" fill="#1f2328">better-auth/better-auth<tspan font-weight="400" fill="#59636e">  ★ 31k</tspan></text>
+<text x="32" y="365" font-size="12.5" fill="#59636e">fix(two-factor): use the issuer option in get-totp-uri</text>
+<rect x="747" y="341" width="81" height="22" rx="11" fill="none" stroke="#9a6700"/>
+<text x="787.5" y="356" font-size="12" font-weight="600" fill="#9a6700" text-anchor="middle">In review</text>
 <line x1="32" y1="374" x2="828" y2="374" stroke="#d0d7de"/>
-<text x="32" y="394" font-size="13" font-weight="600" fill="#1f2328">foliojs/pdfkit<tspan font-weight="400" fill="#59636e">  ★ 11k</tspan></text>
-<text x="32" y="411" font-size="12.5" fill="#59636e">Say that no font is set instead of failing on null in documents created with font: null</text>
+<text x="32" y="394" font-size="13" font-weight="600" fill="#1f2328">necolas/react-native-web<tspan font-weight="400" fill="#59636e">  ★ 22k</tspan></text>
+<text x="32" y="411" font-size="12.5" fill="#59636e">[fix] Responder: keep negative touch identifiers in the touch bank</text>
 <rect x="782" y="387" width="46" height="22" rx="11" fill="none" stroke="#1a7f37"/>
 <text x="805" y="402" font-size="12" font-weight="600" fill="#1a7f37" text-anchor="middle">Open</text>
 <line x1="32" y1="420" x2="828" y2="420" stroke="#d0d7de"/>
-<text x="32" y="440" font-size="13" font-weight="600" fill="#1f2328">trentm/python-markdown2<tspan font-weight="400" fill="#59636e">  ★ 2.8k</tspan></text>
-<text x="32" y="457" font-size="12.5" fill="#59636e">Don't apply strike inside inline HTML tags</text>
+<text x="32" y="440" font-size="13" font-weight="600" fill="#1f2328">webpro-nl/knip<tspan font-weight="400" fill="#59636e">  ★ 13k</tspan></text>
+<text x="32" y="457" font-size="12.5" fill="#59636e">Treat members of an enum iterated with `for...in` as used</text>
 <rect x="782" y="433" width="46" height="22" rx="11" fill="none" stroke="#1a7f37"/>
 <text x="805" y="448" font-size="12" font-weight="600" fill="#1a7f37" text-anchor="middle">Open</text>
 <line x1="32" y1="466" x2="828" y2="466" stroke="#d0d7de"/>
-<text x="32" y="486" font-size="13" font-weight="600" fill="#1f2328">cantoo-scribe/pdf-lib<tspan font-weight="400" fill="#59636e">  ★ 364</tspan></text>
-<text x="32" y="503" font-size="12.5" fill="#59636e">Measure standard font text without kerning, as drawText draws it</text>
+<text x="32" y="486" font-size="13" font-weight="600" fill="#1f2328">foliojs/pdfkit<tspan font-weight="400" fill="#59636e">  ★ 11k</tspan></text>
+<text x="32" y="503" font-size="12.5" fill="#59636e">Say that no font is set instead of failing on null in documents created with font: null</text>
 <rect x="782" y="479" width="46" height="22" rx="11" fill="none" stroke="#1a7f37"/>
 <text x="805" y="494" font-size="12" font-weight="600" fill="#1a7f37" text-anchor="middle">Open</text>
+<line x1="32" y1="512" x2="828" y2="512" stroke="#d0d7de"/>
+<text x="32" y="532" font-size="13" font-weight="600" fill="#1f2328">mdn/browser-compat-data<tspan font-weight="400" fill="#59636e">  ★ 5.8k</tspan></text>
+<text x="32" y="549" font-size="12.5" fill="#59636e">Remove irrelevant `api.PushSubscription.subscriptionId`</text>
+<rect x="782" y="525" width="46" height="22" rx="11" fill="none" stroke="#1a7f37"/>
+<text x="805" y="540" font-size="12" font-weight="600" fill="#1a7f37" text-anchor="middle">Open</text>
+<line x1="32" y1="558" x2="828" y2="558" stroke="#d0d7de"/>
+<text x="32" y="578" font-size="13" font-weight="600" fill="#1f2328">trentm/python-markdown2<tspan font-weight="400" fill="#59636e">  ★ 2.8k</tspan></text>
+<text x="32" y="595" font-size="12.5" fill="#59636e">Don't apply strike inside inline HTML tags</text>
+<rect x="782" y="571" width="46" height="22" rx="11" fill="none" stroke="#1a7f37"/>
+<text x="805" y="586" font-size="12" font-weight="600" fill="#1a7f37" text-anchor="middle">Open</text><line x1="32" y1="604" x2="828" y2="604" stroke="#d0d7de"/>
+<text x="32" y="630" font-size="12.5" fill="#59636e">1 more pull request in the list below</text>
 </svg>
