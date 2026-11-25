@@ -1,6 +1,6 @@
 <!-- profile:start -->
 <p align="center">
-<a href="https://github.com/search?q=is%3Apr%20author%3AalphaNumericEntity%20-user%3AalphaNumericEntity&type=pullrequests"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/hero.svg"><img src="assets/light/hero.svg" width="100%" alt="alphaNumericEntity. 4 pull requests merged into 3 projects, 9 open."></picture></a>
+<a href="https://github.com/search?q=is%3Apr%20author%3AalphaNumericEntity%20-user%3AalphaNumericEntity&type=pullrequests"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/hero.svg"><img src="assets/light/hero.svg" width="100%" alt="alphaNumericEntity. 6 pull requests merged into 4 projects, 9 open."></picture></a>
 <a href="https://github.com/alphaNumericEntity?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/projects.svg"><img src="assets/light/projects.svg" width="100%" alt="My projects: PDFAirlock, pdf-redaction-check and no-phone-home"></picture></a>
 <a href="https://github.com/search?q=is%3Apr%20author%3AalphaNumericEntity%20-user%3AalphaNumericEntity&type=pullrequests"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/contributions.svg"><img src="assets/light/contributions.svg" width="100%" alt="Pull requests to other people's projects and their review status"></picture></a>
 </p>
@@ -11,16 +11,18 @@
 
 | Project | Pull request | Status |
 |---|---|---|
+| [jsxgraph/jsxgraph](https://github.com/jsxgraph/jsxgraph) ★1.5k | [Return the results of deprecated aliases](https://github.com/jsxgraph/jsxgraph/pull/858) | Merged 2026-11-25 |
+| [webpro-nl/knip](https://github.com/webpro-nl/knip) ★13k | [Treat members of an enum iterated with `for...in` as used](https://github.com/webpro-nl/knip/pull/2460) | Merged 2026-11-25 |
 | [mdn/browser-compat-data](https://github.com/mdn/browser-compat-data) ★5.8k | [Remove irrelevant `api.PushSubscription.subscriptionId`](https://github.com/mdn/browser-compat-data/pull/31247) | Merged 2026-11-24 |
 | [jsxgraph/jsxgraph](https://github.com/jsxgraph/jsxgraph) ★1.5k | [Return a square identity matrix from JXG.Math.identity when m is not a number](https://github.com/jsxgraph/jsxgraph/pull/857) | Merged 2026-11-24 |
 | [plantuml/plantuml](https://github.com/plantuml/plantuml) ★13k | [🐛 YAML: read a `-` or `- key:` with nothing under it as an empty value](https://github.com/plantuml/plantuml/pull/3038) | Merged 2026-11-23 |
 | [jsxgraph/jsxgraph](https://github.com/jsxgraph/jsxgraph) ★1.5k | [Fix JXG.Math.Statistics.TheilSenRegression slope medians](https://github.com/jsxgraph/jsxgraph/pull/856) | Merged 2026-11-23 |
 | [pixijs/pixijs](https://github.com/pixijs/pixijs) ★49k | [fix: stop HTMLText textures coming out smaller than their image](https://github.com/pixijs/pixijs/pull/12412) | Approved |
-| [stablyai/orca](https://github.com/stablyai/orca) ★136k | [feat(themes): let app themes set agent and workspace status colors](https://github.com/stablyai/orca/pull/41561) | In review |
+| [stablyai/orca](https://github.com/stablyai/orca) ★137k | [feat(themes): let app themes set agent and workspace status colors](https://github.com/stablyai/orca/pull/41561) | In review |
 | [mozilla/pdf.js](https://github.com/mozilla/pdf.js) ★54k | [Render the value of text fields without an appearance stream (issue 20266)](https://github.com/mozilla/pdf.js/pull/22541) | In review |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) ★31k | [fix(two-factor): use the issuer option in get-totp-uri](https://github.com/better-auth/better-auth/pull/12637) | In review |
 | [necolas/react-native-web](https://github.com/necolas/react-native-web) ★22k | [\[fix\] Responder: keep negative touch identifiers in the touch bank](https://github.com/necolas/react-native-web/pull/2965) | Open |
-| [webpro-nl/knip](https://github.com/webpro-nl/knip) ★13k | [Treat members of an enum iterated with `for...in` as used](https://github.com/webpro-nl/knip/pull/2460) | Open |
+| [mdn/content](https://github.com/mdn/content) ★11k | [Remove the PushSubscription.subscriptionId page](https://github.com/mdn/content/pull/46706) | Open |
 | [foliojs/pdfkit](https://github.com/foliojs/pdfkit) ★11k | [Say that no font is set instead of failing on null in documents created with font: null](https://github.com/foliojs/pdfkit/pull/1867) | Open |
 | [trentm/python-markdown2](https://github.com/trentm/python-markdown2) ★2.8k | [Don't apply strike inside inline HTML tags](https://github.com/trentm/python-markdown2/pull/786) | Open |
 | [cantoo-scribe/pdf-lib](https://github.com/cantoo-scribe/pdf-lib) ★365 | [Measure standard font text without kerning, as drawText draws it](https://github.com/cantoo-scribe/pdf-lib/pull/182) | Open |
