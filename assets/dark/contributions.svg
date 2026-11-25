@@ -38,7 +38,7 @@
 <rect x="754" y="341" width="74" height="22" rx="11" fill="none" stroke="#4493f8"/>
 <text x="791" y="356" font-size="12" font-weight="600" fill="#4493f8" text-anchor="middle">Approved</text>
 <line x1="32" y1="374" x2="828" y2="374" stroke="#30363d"/>
-<text x="32" y="394" font-size="13" font-weight="600" fill="#e6edf3">stablyai/orca<tspan font-weight="400" fill="#9198a1">  ★ 137k</tspan></text>
+<text x="32" y="394" font-size="13" font-weight="600" fill="#e6edf3">stablyai/orca<tspan font-weight="400" fill="#9198a1">  ★ 138k</tspan></text>
 <text x="32" y="411" font-size="12.5" fill="#9198a1">feat(themes): let app themes set agent and workspace status colors</text>
 <rect x="747" y="387" width="81" height="22" rx="11" fill="none" stroke="#d29922"/>
 <text x="787.5" y="402" font-size="12" font-weight="600" fill="#d29922" text-anchor="middle">In review</text>
@@ -58,9 +58,9 @@
 <rect x="782" y="525" width="46" height="22" rx="11" fill="none" stroke="#3fb950"/>
 <text x="805" y="540" font-size="12" font-weight="600" fill="#3fb950" text-anchor="middle">Open</text>
 <line x1="32" y1="558" x2="828" y2="558" stroke="#30363d"/>
-<text x="32" y="578" font-size="13" font-weight="600" fill="#e6edf3">mdn/content<tspan font-weight="400" fill="#9198a1">  ★ 11k</tspan></text>
-<text x="32" y="595" font-size="12.5" fill="#9198a1">Remove the PushSubscription.subscriptionId page</text>
+<text x="32" y="578" font-size="13" font-weight="600" fill="#e6edf3">foliojs/pdfkit<tspan font-weight="400" fill="#9198a1">  ★ 11k</tspan></text>
+<text x="32" y="595" font-size="12.5" fill="#9198a1">Say that no font is set instead of failing on null in documents created with font: null</text>
 <rect x="782" y="571" width="46" height="22" rx="11" fill="none" stroke="#3fb950"/>
 <text x="805" y="586" font-size="12" font-weight="600" fill="#3fb950" text-anchor="middle">Open</text><line x1="32" y1="604" x2="828" y2="604" stroke="#30363d"/>
-<text x="32" y="630" font-size="12.5" fill="#9198a1">3 more pull requests in the list below</text>
+<text x="32" y="630" font-size="12.5" fill="#9198a1">2 more pull requests in the list below</text>
 </svg>
