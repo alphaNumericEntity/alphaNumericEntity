@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 
 const LOGIN = "alphaNumericEntity";
 const ROOT = new URL("../", import.meta.url);
@@ -49,10 +49,6 @@ async function api(path) {
 
 function escapeXml(text) {
   return String(text).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
-}
-
-function escapeCell(text) {
-  return text.replaceAll("\\", "\\\\").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll("|", "\\|").replaceAll("[", "\\[").replaceAll("]", "\\]");
 }
 
 function cleanTitle(text) {
@@ -129,31 +125,31 @@ ${lines}`;
 ${cards.join("\n")}`);
 }
 
-function contributionsSvg(prs, hidden, theme) {
-  const rowHeight = 46;
-  const top = 52;
-  const rows = prs.map((pr, i) => {
-    const y = top + i * rowHeight;
-    const color = theme[pr.status] ?? theme.open;
-    const label = STATUS_LABEL[pr.status];
-    const pillWidth = 18 + label.length * 7;
-    const divider = i > 0 ? `<line x1="32" y1="${y}" x2="${WIDTH - 32}" y2="${y}" stroke="${theme.border}"/>` : "";
-    return `${divider}
-<text x="32" y="${y + 20}" font-size="13" font-weight="600" fill="${theme.text}">${escapeXml(pr.repo)}<tspan font-weight="400" fill="${theme.muted}">  ★ ${formatStars(pr.stars)}</tspan></text>
-<text x="32" y="${y + 37}" font-size="12.5" fill="${theme.muted}">${escapeXml(fit(pr.title, 96))}</text>
-<rect x="${WIDTH - 32 - pillWidth}" y="${y + 13}" width="${pillWidth}" height="22" rx="11" fill="none" stroke="${color}"/>
-<text x="${WIDTH - 32 - pillWidth / 2}" y="${y + 28}" font-size="12" font-weight="600" fill="${color}" text-anchor="middle">${label}</text>`;
-  });
-  const listBottom = top + Math.max(prs.length, 1) * rowHeight;
-  const empty = prs.length === 0 ? `<text x="32" y="${top + 24}" font-size="13" fill="${theme.muted}">Nothing open right now.</text>` : "";
-  const more = hidden > 0
-    ? `<line x1="32" y1="${listBottom}" x2="${WIDTH - 32}" y2="${listBottom}" stroke="${theme.border}"/>
-<text x="32" y="${listBottom + 26}" font-size="12.5" fill="${theme.muted}">${plural(hidden, "more pull request")} in the list below</text>`
-    : "";
-  const height = listBottom + (hidden > 0 ? 44 : 18);
-  return svg(height, theme, `
-<text x="32" y="36" font-size="13" font-weight="600" letter-spacing="1.2" fill="${theme.muted}">PULL REQUESTS TO OTHER PEOPLE'S PROJECTS</text>
-${rows.join("\n")}${empty}${more}`);
+function sectionTitleSvg(text, theme) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="44" viewBox="0 0 ${WIDTH} 44" font-family="${FONT}">
+<text x="24" y="30" font-size="13" font-weight="600" letter-spacing="1.2" fill="${theme.muted}">${escapeXml(text)}</text>
+</svg>
+`;
+}
+
+function prSvg(pr, theme) {
+  const color = theme[pr.status] ?? theme.open;
+  const label = STATUS_LABEL[pr.status];
+  const pillWidth = 18 + label.length * 7;
+  return svg(62, theme, `
+<text x="24" y="27" font-size="13" font-weight="600" fill="${theme.text}">${escapeXml(pr.repo)}<tspan font-weight="400" fill="${theme.muted}">  ★ ${formatStars(pr.stars)}</tspan></text>
+<text x="24" y="45" font-size="12.5" fill="${theme.muted}">${escapeXml(fit(pr.title, 96))}</text>
+<rect x="${WIDTH - 24 - pillWidth}" y="20" width="${pillWidth}" height="22" rx="11" fill="none" stroke="${color}"/>
+<text x="${WIDTH - 24 - pillWidth / 2}" y="35" font-size="12" font-weight="600" fill="${color}" text-anchor="middle">${label}</text>`);
+}
+
+function emptySvg(theme) {
+  return svg(62, theme, `
+<text x="24" y="36" font-size="13" fill="${theme.muted}">Nothing open right now.</text>`);
+}
+
+function prSlug(pr) {
+  return `${pr.repo.replace("/", "-")}-${pr.number}`.replace(/[^A-Za-z0-9._-]/g, "-");
 }
 
 function picture(name, alt, href) {
@@ -196,37 +192,34 @@ const stats = {
   stars: repoNames.reduce((sum, name) => sum + (stars.get(name) ?? 0), 0),
 };
 
-const shown = prs.slice(0, 12);
 for (const [mode, theme] of Object.entries(THEMES)) {
   const dir = new URL(`assets/${mode}/`, ROOT);
+  const prDir = new URL("prs/", dir);
   await mkdir(dir, { recursive: true });
+  await rm(new URL("contributions.svg", dir), { force: true });
+  await rm(prDir, { recursive: true, force: true });
+  await mkdir(prDir, { recursive: true });
   await writeFile(new URL("hero.svg", dir), heroSvg(stats, theme));
   await writeFile(new URL("projects.svg", dir), projectsSvg(theme));
-  await writeFile(new URL("contributions.svg", dir), contributionsSvg(shown, prs.length - shown.length, theme));
+  await writeFile(new URL("contributions-title.svg", dir), sectionTitleSvg("PULL REQUESTS TO OTHER PEOPLE'S PROJECTS", theme));
+  if (prs.length === 0) await writeFile(new URL("empty.svg", prDir), emptySvg(theme));
+  for (const pr of prs) await writeFile(new URL(`${prSlug(pr)}.svg`, prDir), prSvg(pr, theme));
 }
 
 const searchUrl = `https://github.com/search?q=${query}&type=pullrequests`;
 const heroAlt = stats.merged > 0
   ? `${plural(stats.merged, "pull request")} merged into ${plural(stats.mergedProjects, "project")}, ${stats.open} open`
   : `${plural(stats.open, "pull request")} open in ${plural(stats.openProjects, "project")}`;
-const table = ["| Project | Pull request | Status |", "|---|---|---|", ...prs.map((pr) => {
-  const status = pr.status === "merged" ? `Merged ${pr.mergedAt.slice(0, 10)}` : STATUS_LABEL[pr.status];
-  return `| [${pr.repo}](https://github.com/${pr.repo}) ★${formatStars(pr.stars)} | [${escapeCell(pr.title)}](${pr.url}) | ${status} |`;
-})].join("\n");
+const prPictures = prs.length === 0
+  ? picture("prs/empty", "No open pull requests right now")
+  : prs.map((pr) => picture(`prs/${prSlug(pr)}`, `${pr.repo}: ${pr.title} (${STATUS_LABEL[pr.status]})`, pr.url)).join("\n");
 
 const section = `<p align="center">
 ${picture("hero", `alphaNumericEntity. ${heroAlt}.`, searchUrl)}
 ${picture("projects", "My projects: PDFAirlock, pdf-redaction-check and no-phone-home", "https://github.com/alphaNumericEntity?tab=repositories")}
-${picture("contributions", "Pull requests to other people's projects and their review status", searchUrl)}
-</p>
-
-<details>
-<summary><b>Every pull request, with links</b></summary>
-<br>
-
-${table}
-
-</details>`;
+${picture("contributions-title", "Pull requests to other people's projects")}
+${prPictures}
+</p>`;
 
 const readme = await readFile(README, "utf8");
 const start = readme.indexOf(START);

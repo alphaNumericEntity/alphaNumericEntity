@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="62" viewBox="0 0 860 62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect x="0.5" y="0.5" width="859" height="61" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+
+<text x="24" y="27" font-size="13" font-weight="600" fill="#1f2328">better-auth/better-auth<tspan font-weight="400" fill="#59636e">  ★ 31k</tspan></text>
+<text x="24" y="45" font-size="12.5" fill="#59636e">fix(two-factor): use the issuer option in get-totp-uri</text>
+<rect x="755" y="20" width="81" height="22" rx="11" fill="none" stroke="#9a6700"/>
+<text x="795.5" y="35" font-size="12" font-weight="600" fill="#9a6700" text-anchor="middle">In review</text>
+</svg>
