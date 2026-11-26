@@ -3,6 +3,6 @@
 
 <text x="24" y="27" font-size="13" font-weight="600" fill="#e6edf3">pixijs/pixijs<tspan font-weight="400" fill="#9198a1">  ★ 49k</tspan></text>
 <text x="24" y="45" font-size="12.5" fill="#9198a1">fix: stop HTMLText textures coming out smaller than their image</text>
-<rect x="762" y="20" width="74" height="22" rx="11" fill="none" stroke="#4493f8"/>
-<text x="799" y="35" font-size="12" font-weight="600" fill="#4493f8" text-anchor="middle">Approved</text>
+<rect x="776" y="20" width="60" height="22" rx="11" fill="none" stroke="#ab7df8"/>
+<text x="806" y="35" font-size="12" font-weight="600" fill="#ab7df8" text-anchor="middle">Merged</text>
 </svg>
