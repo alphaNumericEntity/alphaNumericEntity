@@ -4,6 +4,6 @@
 <text x="32" y="50" font-size="26" font-weight="600" fill="#1f2328">alphaNumericEntity</text>
 <text x="32" y="78" font-size="15" fill="#59636e">I build privacy-first tools, and fix bugs in the open-source libraries underneath them.</text>
 <line x1="32" y1="98" x2="828" y2="98" stroke="#d0d7de"/>
-<text x="32" y="126" font-size="15" fill="#1f2328"><tspan font-weight="600">9 pull requests merged into 6 projects</tspan><tspan fill="#59636e"> · 8 more open · projects with 357k GitHub stars between them</tspan></text>
+<text x="32" y="126" font-size="15" fill="#1f2328"><tspan font-weight="600">9 pull requests merged into 6 projects</tspan><tspan fill="#59636e"> · 10 more open · projects with 374k GitHub stars between them</tspan></text>
 <text x="828" y="50" font-size="13" fill="#59636e" text-anchor="end">Sydney, Australia</text>
 </svg>

@@ -1,6 +1,6 @@
 <!-- profile:start -->
 <p align="center">
-<a href="https://github.com/search?q=is%3Apr%20author%3AalphaNumericEntity%20-user%3AalphaNumericEntity&type=pullrequests"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/hero.svg"><img src="assets/light/hero.svg" width="100%" alt="alphaNumericEntity. 9 pull requests merged into 6 projects, 8 open."></picture></a>
+<a href="https://github.com/search?q=is%3Apr%20author%3AalphaNumericEntity%20-user%3AalphaNumericEntity&type=pullrequests"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/hero.svg"><img src="assets/light/hero.svg" width="100%" alt="alphaNumericEntity. 9 pull requests merged into 6 projects, 10 open."></picture></a>
 <a href="https://github.com/alphaNumericEntity?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/projects.svg"><img src="assets/light/projects.svg" width="100%" alt="My projects: PDFAirlock, pdf-redaction-check and no-phone-home"></picture></a>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/contributions-title.svg"><img src="assets/light/contributions-title.svg" width="100%" alt="Pull requests to other people's projects"></picture>
 <a href="https://github.com/mdn/content/pull/46706"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/prs/mdn-content-46706.svg"><img src="assets/light/prs/mdn-content-46706.svg" width="100%" alt="mdn/content: Remove the PushSubscription.subscriptionId page (Merged)"></picture></a>
@@ -10,7 +10,7 @@
 <a href="https://github.com/webpro-nl/knip/pull/2460"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/prs/webpro-nl-knip-2460.svg"><img src="assets/light/prs/webpro-nl-knip-2460.svg" width="100%" alt="webpro-nl/knip: Treat members of an enum iterated with `for...in` as used (Merged)"></picture></a>
 <a href="https://github.com/mdn/browser-compat-data/pull/31247"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/prs/mdn-browser-compat-data-31247.svg"><img src="assets/light/prs/mdn-browser-compat-data-31247.svg" width="100%" alt="mdn/browser-compat-data: Remove irrelevant `api.PushSubscription.subscriptionId` (Merged)"></picture></a>
 </p>
-<p align="center"><b>1</b> &nbsp;·&nbsp; <a href="https://github.com/alphaNumericEntity/alphaNumericEntity/blob/main/pages/prs-2.md">2</a> &nbsp;·&nbsp; <a href="https://github.com/alphaNumericEntity/alphaNumericEntity/blob/main/pages/prs-3.md">3</a> &nbsp;·&nbsp; <a href="https://github.com/alphaNumericEntity/alphaNumericEntity/blob/main/pages/prs-2.md">Next →</a></p>
+<p align="center"><b>1</b> &nbsp;·&nbsp; <a href="https://github.com/alphaNumericEntity/alphaNumericEntity/blob/main/pages/prs-2.md">2</a> &nbsp;·&nbsp; <a href="https://github.com/alphaNumericEntity/alphaNumericEntity/blob/main/pages/prs-3.md">3</a> &nbsp;·&nbsp; <a href="https://github.com/alphaNumericEntity/alphaNumericEntity/blob/main/pages/prs-4.md">4</a> &nbsp;·&nbsp; <a href="https://github.com/alphaNumericEntity/alphaNumericEntity/blob/main/pages/prs-2.md">Next →</a></p>
 <!-- profile:end -->
 
 ### The projects
