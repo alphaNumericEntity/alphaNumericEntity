@@ -3,6 +3,10 @@ import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 const LOGIN = "alphaNumericEntity";
 const ROOT = new URL("../", import.meta.url);
 const README = new URL("README.md", ROOT);
+const PAGES = new URL("pages/", ROOT);
+const PROFILE_URL = `https://github.com/${LOGIN}`;
+const REPO_URL = `https://github.com/${LOGIN}/${LOGIN}`;
+const PER_PAGE = 6;
 const START = "<!-- profile:start -->";
 const END = "<!-- profile:end -->";
 const WIDTH = 860;
@@ -152,9 +156,27 @@ function prSlug(pr) {
   return `${pr.repo.replace("/", "-")}-${pr.number}`.replace(/[^A-Za-z0-9._-]/g, "-");
 }
 
-function picture(name, alt, href) {
-  const img = `<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/${name}.svg"><img src="assets/light/${name}.svg" width="100%" alt="${escapeXml(alt)}"></picture>`;
+function picture(name, alt, href, base = "") {
+  const img = `<picture><source media="(prefers-color-scheme: dark)" srcset="${base}assets/dark/${name}.svg"><img src="${base}assets/light/${name}.svg" width="100%" alt="${escapeXml(alt)}"></picture>`;
   return href ? `<a href="${href}">${img}</a>` : img;
+}
+
+function pageUrl(page) {
+  return page === 1 ? PROFILE_URL : `${REPO_URL}/blob/main/pages/prs-${page}.md`;
+}
+
+function pageNav(page, pageCount) {
+  if (pageCount < 2) return "";
+  const links = [];
+  if (page > 1) links.push(`<a href="${pageUrl(page - 1)}">← Previous</a>`);
+  for (let p = 1; p <= pageCount; p++) links.push(p === page ? `<b>${p}</b>` : `<a href="${pageUrl(p)}">${p}</a>`);
+  if (page < pageCount) links.push(`<a href="${pageUrl(page + 1)}">Next →</a>`);
+  return `<p align="center">${links.join(" &nbsp;·&nbsp; ")}</p>`;
+}
+
+function prCards(pagePrs, base) {
+  if (pagePrs.length === 0) return picture("prs/empty", "No open pull requests right now", undefined, base);
+  return pagePrs.map((pr) => picture(`prs/${prSlug(pr)}`, `${pr.repo}: ${pr.title} (${STATUS_LABEL[pr.status]})`, pr.url, base)).join("\n");
 }
 
 const query = encodeURIComponent(`is:pr author:${LOGIN} -user:${LOGIN}`);
@@ -210,16 +232,29 @@ const searchUrl = `https://github.com/search?q=${query}&type=pullrequests`;
 const heroAlt = stats.merged > 0
   ? `${plural(stats.merged, "pull request")} merged into ${plural(stats.mergedProjects, "project")}, ${stats.open} open`
   : `${plural(stats.open, "pull request")} open in ${plural(stats.openProjects, "project")}`;
-const prPictures = prs.length === 0
-  ? picture("prs/empty", "No open pull requests right now")
-  : prs.map((pr) => picture(`prs/${prSlug(pr)}`, `${pr.repo}: ${pr.title} (${STATUS_LABEL[pr.status]})`, pr.url)).join("\n");
+const pageCount = Math.max(1, Math.ceil(prs.length / PER_PAGE));
+const pagePrs = (page) => prs.slice((page - 1) * PER_PAGE, page * PER_PAGE);
 
 const section = `<p align="center">
 ${picture("hero", `alphaNumericEntity. ${heroAlt}.`, searchUrl)}
 ${picture("projects", "My projects: PDFAirlock, pdf-redaction-check and no-phone-home", "https://github.com/alphaNumericEntity?tab=repositories")}
 ${picture("contributions-title", "Pull requests to other people's projects")}
-${prPictures}
-</p>`;
+${prCards(pagePrs(1), "")}
+</p>
+${pageNav(1, pageCount)}`;
+
+await rm(PAGES, { recursive: true, force: true });
+if (pageCount > 1) await mkdir(PAGES, { recursive: true });
+for (let page = 2; page <= pageCount; page++) {
+  await writeFile(new URL(`prs-${page}.md`, PAGES), `<p align="center">
+${picture("contributions-title", "Pull requests to other people's projects", undefined, "../")}
+${prCards(pagePrs(page), "../")}
+</p>
+${pageNav(page, pageCount)}
+
+<p align="center"><sub><a href="${PROFILE_URL}">Back to the profile</a> · Page ${page} of ${pageCount} · rebuilt daily from GitHub</sub></p>
+`);
+}
 
 const readme = await readFile(README, "utf8");
 const start = readme.indexOf(START);
